@@ -5,9 +5,9 @@ class Object {
     this.height = height;
     this.width = width;
     this.rotation = 0;
-    this.texture = '';
+    this.texture = null;
     draw(ctx,canvas) {
-       ctx.drawImage(new Image(this.texture), this.x, this.y, this.width, this.height);
+       ctx.drawImage(this.texture, this.x, this.y, this.width, this.height);
     }
   }
 }
